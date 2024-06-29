@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMR CALCULATOR</h1>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form}}
+    
+        <button type="submit">bmr</button>
+    </form>
+   
+    {%if data%}
+     <h4> you have to consume {{data}} to maintain current weight</h4>
+    {%endif%}
+</body>
+</html>
